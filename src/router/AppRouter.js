@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -11,19 +9,19 @@ import Home from './components/Home';
 
 
 
-function App() {
+function AppRouter() {
   return (
     <Router>
       <div className="App">
         <Routes>
          
-          <Route path="/signup" element={<Register />} />
-          <Route path="/" element={<Login />} />
+          <Route path="/r" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route path="c/" element={<Collections />} />
           <Route path="/co" element={<CollectionDetail />} />
          
           
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
     
         </Routes>
       </div>
@@ -31,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRouter;
